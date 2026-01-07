@@ -1,4 +1,4 @@
-<!-- CARROSSEL DE CATEGORIAS - MODERNO -->
+<!-- CARROSSEL DE CATEGORIAS - ÍCONES PERSONALIZADOS -->
 <style>
 .categories-wrapper {
   max-width: 1200px;
@@ -29,7 +29,6 @@
   border-radius: 10px;
 }
 
-/* CARD */
 .category-card {
   min-width: 190px;
   height: 120px;
@@ -50,27 +49,20 @@
   box-shadow: 0 12px 28px rgba(47,164,255,0.35);
 }
 
-/* ÍCONE MODERNO */
 .category-icon {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
 }
 
-.category-icon::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  background: #2fa4ff;
+.category-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #2fa4ff;
+  fill: none;
+  stroke-width: 1.8;
 }
 
-/* TEXTO */
 .category-name {
   font-size: 14px;
   font-weight: 600;
@@ -80,270 +72,77 @@
 </style>
 
 <div class="categories-wrapper">
-
   <div class="categories-title">Categorias</div>
 
   <div class="categories-carousel">
 
+    <!-- RECEPTORES -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="7" width="18" height="10" rx="2"/>
+          <path d="M8 3c2 2 2 4 2 4"/>
+          <path d="M16 3c-2 2-2 4-2 4"/>
+        </svg>
+      </div>
       <div class="category-name">Receptores</div>
     </a>
 
+    <!-- TV LIVRE -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="12" rx="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+        </svg>
+      </div>
       <div class="category-name">TV Livre</div>
     </a>
 
+    <!-- TV BOX -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="5" y="7" width="14" height="10" rx="2"/>
+          <circle cx="12" cy="12" r="1.5"/>
+        </svg>
+      </div>
       <div class="category-name">TV Box</div>
     </a>
 
+    <!-- ACESSÓRIOS -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1-1.6 2.8-0.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21h-3v-.2a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1-1.6-2.8.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3v-3h.2a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1L6 4.4l.1.1a1.7 1.7 0 0 0 1.8.3 1.7 1.7 0 0 0 1-1.5V3h3v.2a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1 1.6 2.8-.1.1a1.7 1.7 0 0 0-.3 1.8 1.7 1.7 0 0 0 1.5 1H21v3h-.2a1.7 1.7 0 0 0-1.5 1z"/>
+        </svg>
+      </div>
       <div class="category-name">Acessórios</div>
     </a>
 
+    <!-- IMPORTADOS -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18"/>
+          <path d="M12 3a15 15 0 0 1 0 18"/>
+          <path d="M12 3a15 15 0 0 0 0 18"/>
+        </svg>
+      </div>
       <div class="category-name">Importados</div>
     </a>
 
+    <!-- SEGURANÇA -->
     <a href="#" class="category-card">
-      <div class="category-icon"></div>
-      <div class="category-name">Equipamentos de Segurança</div>
+      <div class="category-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/>
+        </svg>
+      </div>
+      <div class="category-name">Equip. Segurança</div>
     </a>
 
   </div>
 </div>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Catálogo Brasil Sat</title>
-
-<style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: #050d1a;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-}
-
-.catalog-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 16px;
-}
-
-.category {
-  margin-bottom: 48px;
-}
-
-.category-title {
-  font-size: 26px;
-  margin-bottom: 18px;
-}
-
-/* CARROSSEL */
-.carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 12px;
-}
-
-.carousel::-webkit-scrollbar {
-  height: 6px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background: #1e90ff;
-  border-radius: 10px;
-}
-
-/* CARD */
-.product-card {
-  background: linear-gradient(180deg, #0b1f3a, #07172b);
-  border-radius: 18px;
-  width: 260px;
-  flex-shrink: 0;
-  padding: 16px;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 14px;
-  margin-bottom: 12px;
-}
-
-.product-card h3 {
-  font-size: 17px;
-  margin: 6px 0;
-}
-
-.product-card p {
-  font-size: 14px;
-  color: #cfd8ff;
-  margin-bottom: 12px;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffd36a;
-  margin-bottom: 14px;
-}
-
-.btn {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: auto;
-  background: linear-gradient(90deg, #0f5fff, #2fa4ff);
-  color: #ffffff;
-}
-</style>
-</head>
-
-<body>
-
-<div class="catalog-wrapper">
-
-  <!-- MAIS VENDIDOS -->
-  <div class="category">
-    <div class="category-title">🔥 Mais Vendidos</div>
-
-    <div class="carousel">
-
-      <!-- PRODUTO 1 -->
-      <div class="product-card">
-        <img src="IMAGEM_1" alt="Produto 1">
-        <h3>Produto 1</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%201" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 2 -->
-      <div class="product-card">
-        <img src="IMAGEM_2" alt="Produto 2">
-        <h3>Produto 2</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%202" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 3 -->
-      <div class="product-card">
-        <img src="IMAGEM_3" alt="Produto 3">
-        <h3>Produto 3</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%203" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 4 -->
-      <div class="product-card">
-        <img src="IMAGEM_4" alt="Produto 4">
-        <h3>Produto 4</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%204" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 5 -->
-      <div class="product-card">
-        <img src="IMAGEM_5" alt="Produto 5">
-        <h3>Produto 5</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%205" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 6 -->
-      <div class="product-card">
-        <img src="IMAGEM_6" alt="Produto 6">
-        <h3>Produto 6</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%206" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 7 -->
-      <div class="product-card">
-        <img src="IMAGEM_7" alt="Produto 7">
-        <h3>Produto 7</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%207" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 8 -->
-      <div class="product-card">
-        <img src="IMAGEM_8" alt="Produto 8">
-        <h3>Produto 8</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%208" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 9 -->
-      <div class="product-card">
-        <img src="IMAGEM_9" alt="Produto 9">
-        <h3>Produto 9</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%209" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 10 -->
-      <div class="product-card">
-        <img src="IMAGEM_10" alt="Produto 10">
-        <h3>Produto 10</h3>
-        <p>Descrição curta do produto.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Produto%2010" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-</body>
-</html>
-
