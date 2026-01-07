@@ -1,195 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Catálogo Brasil Sat</title>
-
+<!-- CARROSSEL DE CATEGORIAS -->
 <style>
-* { box-sizing: border-box; }
+.categories-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
 
-body {
-  margin: 0;
-  background: #050d1a;
-  font-family: Arial, Helvetica, sans-serif;
+.categories-title {
+  font-size: 24px;
+  margin-bottom: 16px;
   color: #ffffff;
 }
 
-.catalog-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 16px;
-}
-
-/* CATEGORIA */
-.category {
-  margin-bottom: 56px;
-}
-
-.category-title {
-  font-size: 26px;
-  margin-bottom: 18px;
-}
-
-/* CARROSSEL */
-.carousel {
+.categories-carousel {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
-.carousel::-webkit-scrollbar {
+.categories-carousel::-webkit-scrollbar {
   height: 6px;
 }
 
-.carousel::-webkit-scrollbar-thumb {
+.categories-carousel::-webkit-scrollbar-thumb {
   background: #1e90ff;
   border-radius: 10px;
 }
 
-/* CARD */
-.product-card {
+.category-card {
+  min-width: 180px;
+  height: 120px;
   background: linear-gradient(180deg, #0b1f3a, #07172b);
-  border-radius: 18px;
-  width: 260px;
-  flex-shrink: 0;
-  padding: 16px;
-  scroll-snap-align: start;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 14px;
-  margin-bottom: 12px;
-}
-
-.product-card h3 {
-  font-size: 17px;
-  margin: 6px 0;
-}
-
-.product-card p {
-  font-size: 14px;
-  color: #cfd8ff;
-  margin-bottom: 12px;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffd36a;
-  margin-bottom: 14px;
-}
-
-.btn {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  border-radius: 30px;
-  font-weight: bold;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  margin-top: auto;
-  background: linear-gradient(90deg, #0f5fff, #2fa4ff);
   color: #ffffff;
+  scroll-snap-align: start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(30,144,255,0.35);
+}
+
+.category-icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.category-name {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
 }
 </style>
-</head>
 
-<body>
+<div class="categories-wrapper">
 
-<div class="catalog-wrapper">
+  <div class="categories-title">🗂️ Categorias</div>
 
-  <!-- 1. MAIS VENDIDOS -->
-  <div class="category">
-    <div class="category-title">🔥 Mais Vendidos</div>
-    <div class="carousel">
-      <!-- Produto -->
-      <div class="product-card">
-        <img src="IMAGEM_1" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
+  <div class="categories-carousel">
+
+    <a href="#" class="category-card">
+      <div class="category-icon">📡</div>
+      <div class="category-name">Receptores</div>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-icon">📺</div>
+      <div class="category-name">TV Livre</div>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-icon">📦</div>
+      <div class="category-name">TV Box</div>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-icon">🔧</div>
+      <div class="category-name">Acessórios</div>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-icon">🌎</div>
+      <div class="category-name">Importados</div>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-icon">🔒</div>
+      <div class="category-name">Equipamentos de Segurança</div>
+    </a>
+
   </div>
-
-  <!-- 2. CONECTIVIDADE -->
-  <div class="category">
-    <div class="category-title">📡 Equipamentos de Conectividade</div>
-    <div class="carousel">
-      <div class="product-card">
-        <img src="IMAGEM_2" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. SATÉLITE -->
-  <div class="category">
-    <div class="category-title">🛰️ Soluções via Satélite</div>
-    <div class="carousel">
-      <div class="product-card">
-        <img src="IMAGEM_3" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. ANTENAS -->
-  <div class="category">
-    <div class="category-title">📶 Antenas e Receptores</div>
-    <div class="carousel">
-      <div class="product-card">
-        <img src="IMAGEM_4" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 5. ACESSÓRIOS -->
-  <div class="category">
-    <div class="category-title">🔧 Acessórios</div>
-    <div class="carousel">
-      <div class="product-card">
-        <img src="IMAGEM_5" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 6. NOVIDADES -->
-  <div class="category">
-    <div class="category-title">✨ Novidades</div>
-    <div class="carousel">
-      <div class="product-card">
-        <img src="IMAGEM_6" alt="Produto">
-        <h3>Produto</h3>
-        <p>Descrição curta.</p>
-        <div class="price">Consultar disponibilidade</div>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
 </div>
-
-</body>
-</html>
